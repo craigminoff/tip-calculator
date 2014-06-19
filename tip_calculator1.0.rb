@@ -9,7 +9,7 @@ tax = meal_cost * tax_rate/100
 tip = meal_cost * tip_rate/100
 total = tax + tip + meal_cost
 
-puts "The pre-tax cost of your meal was $%.2f.\n" % meal_cost
-puts "At %d%%, tax for this meal is $%.2f.\n" % [tax_rate, tax]
-puts "For a %d%% tip, you should leave $%.2f.\n" % [tip_rate, tip]
-puts "The grand total for this meal is then $%.2f.\n" % total
+prints "The pre-tax cost of your meal was $%.2f.\n" % meal_cost
+prints "At %d%%, tax for this meal is $%.2f.\n" % [tax_rate, tax]
+prints "For a %d%% tip, you should leave $%.2f.\n" % [tip_rate, tip]
+prints "The grand total for this meal is then $%.2f.\n" % total
