@@ -1,12 +1,17 @@
-puts "What did the meal cost?"
+puts "What did the meal cost"
 meal_cost = Float(gets)
 puts "What is the tax rate (%)?"
 tax_rate = Float(gets)
 puts "What do you tip (%)?"
 tip_rate = Float(gets)
 
-tax = tax_rate/100 * meal_cost
-tip = tip_rate/100 * meal_cost
+def calculator(percent, meal_cost)
+	partial_amount = percent/100 * meal_cost
+	return partial_amount
+end
+
+tax = calculator(tax_rate, meal_cost)
+tip = calculator(tip_rate, meal_cost)
 total = tax + tip + meal_cost
 
 print "The pre-tax cost of your meal was $%.2f.\n" % meal_cost
